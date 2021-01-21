@@ -1,0 +1,248 @@
+*{margin: 0;
+padding: 0;}
+
+body{
+    background-image: url("https://wow.zamimg.com/uploads/screenshots/normal/980479.jpg");
+    
+    
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.container{
+    padding:5px;
+    width: 80%;
+    
+    
+}
+
+
+header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top:20px ;
+    padding-bottom:20px;
+}
+
+#title{
+    padding: 10px 0 10px 0;
+    font-size:45px;
+}
+
+#description{
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px 0 20px 0;
+    display: block
+}
+
+#survey-form{
+        
+        opacity: 0.75;
+        width:100%;
+        padding:5px;
+
+}
+
+.form-group{
+    background:rgb(54, 13, 201);
+    width:98%;
+    opacity: 0.95;
+    display:block;
+    text-align: start;
+    
+    padding: 10px 10px 10px 10px;
+    font-size:23px;
+    
+}
+
+.form-group #name-label,  #email-label, #email-label,  #number-label, p{
+    font-weight: bold;
+    color:white;
+    margin: 20px 10px 20px 10px;
+    
+}
+
+.form-group .first-input, #dropdown{
+    
+    width:98%;
+    height: 30px;
+    border-radius: 5px ;
+    display: flex;
+    margin: 5px auto 20px auto;
+    padding: 0 0 0 5px;
+    
+}
+.second-label {
+    display:block;
+    position: relative;
+    margin-left: 10px;
+    margin-top:5px;
+    cursor: pointer;
+    font-size: 23px;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default inputradio */
+.second-label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark{
+    position: absolute;
+    top:0;
+    left:25px;
+    height: 25px;
+    width: 25px;
+    
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.second-label:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+
+.second-label input:checked ~ .checkmark{
+    background-color: #2196f3;
+}
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.second-label p{
+    margin-left: 60px;
+}
+
+
+
+.second-label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.second-label .checkmark:after {
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+
+}
+
+
+.third-label{
+    display: block;
+    position:relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+     -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.third-label input{
+    position:absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.input-checkbox{
+    position: absolute;
+    top: 0;
+    left: 35px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+
+  /* On mouse-over, add a grey background color */
+.third-label input ~ .input-checkbox {
+    background-color: #ccc;
+  }
+  
+
+  /* When the checkbox is checked, add a blue background */
+.third-label input:checked ~ .input-checkbox {
+    background-color: #2196F3;
+  }
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.input-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+.third-label input:checked ~ .input-checkbox:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+.third-label .input-checkbox:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .third-label p{
+      margin-left: 35px;
+  }
+
+.form-group textarea{
+    display: flex;
+    margin: auto;
+}
+  .input-textarea{
+      width:90%;
+      height: 150px;
+      border-radius:5px;
+  }
+.form-group button{
+    display:flex;
+    margin: auto;
+}
+
+
+.submit-button{
+    background-color:#4caf50;
+    border-radius: 5px;
+    width:90%;
+    height: 80px;
+    cursor:pointer;
+    text-align: center;
+    font-size:23px;
+}
+
+button p{
+    margin:auto;
+}
